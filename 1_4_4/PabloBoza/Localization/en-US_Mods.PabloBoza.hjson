@@ -1,0 +1,8 @@
+Tiles.PabloPaintingTile.MapEntry: Pablo Painting Tile
+
+Items: {
+	PabloPainting: {
+		DisplayName: Pablo Painting
+		Tooltip: ""
+	}
+}
