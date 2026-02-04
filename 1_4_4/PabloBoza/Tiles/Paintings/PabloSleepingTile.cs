@@ -10,34 +10,28 @@ using ReLogic.Content;
 
 namespace PabloBoza.Tiles.Paintings
 {
-    public class PabloPaintingTile : ModTile
+    public class PabloSleepingTile : ModTile
     {
         public override void SetStaticDefaults()
         {
             Main.tileFrameImportant[Type] = true;
             Main.tileLavaDeath[Type] = true;
-            Main.tileWaterDeath[Type] = false;
+            Main.tileWaterDeath[Type] = true;
             TileID.Sets.FramesOnKillWall[Type] = true;
-            
-            TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3Wall);
-            TileObjectData.newTile.Width = 3;  // Width of painting in tiles
-            TileObjectData.newTile.Height = 3; // Height of painting in tiles
-            TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16, 16, 16 };
+
+            TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3Wall); // Needs wall or anchor doesn't work lmao
+            TileObjectData.newTile.Width = 4;  // 4: 64 pixels high, 3: 48 pixels high
+            TileObjectData.newTile.Height = 6; // 6: 96 pixels wide, 3: 48 pixels wide
+            TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16, 16, 16, 16, 16 }; // 6 rows of 16 pixels high
             TileObjectData.newTile.CoordinateWidth = 16;
             TileObjectData.newTile.CoordinatePadding = 2;
-            TileObjectData.newTile.Origin = new Point16(2, 1);
+            TileObjectData.newTile.Origin = new Point16(3, 5); // Anchor point
             TileObjectData.addTile(Type);
-            
+
             AddMapEntry(new Color(120, 85, 60), CreateMapEntryName());
-            
+
             // Can be placed on walls
             TileID.Sets.DisableSmartCursor[Type] = true;
-            // AdjTiles = new int[] { TileID.Paintings };
-        }
-
-        public override void KillMultiTile(int i, int j, int frameX, int frameY)
-        {
-            Item.NewItem(new EntitySource_TileBreak(i, j), i * 16, j * 16, 96, 64, ModContent.ItemType<Items.Paintings.PabloPainting>());
         }
     }
 }

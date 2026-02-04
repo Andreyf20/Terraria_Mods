@@ -1,8 +1,8 @@
-Tiles.PabloPaintingTile.MapEntry: Pablo Painting Tile
+Tiles.PabloSleepingTile.MapEntry: Pablo Sleeping Tile
 
 Items: {
-	PabloPainting: {
-		DisplayName: Pablo Painting
-		Tooltip: ""
+	PabloSleeping: {
+		DisplayName: Pablo Sleeping
+		Tooltip: Ay mi gatito miau miau
 	}
 }

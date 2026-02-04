@@ -13,12 +13,4 @@
 		
 	</ItemGroup>
 
-      <!-- Your PNG files -->
-    <Content Include="Assets\Images\Items\Paintings\PabloPainting.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Images\Tiles\Paintings\PabloPaintingTile.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-
 </Project>
