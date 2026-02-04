@@ -1,8 +1,16 @@
-Tiles.PabloSleepingTile.MapEntry: Pablo Sleeping Tile
+Tiles: {
+	PabloSleepingTile.MapEntry: Pablo Sleeping Tile
+	PabloGatitoTile.MapEntry: Pablo Gatito Tile
+}
 
 Items: {
 	PabloSleeping: {
 		DisplayName: Pablo Sleeping
+		Tooltip: Cosi roncando?
+	}
+
+	PabloGatito: {
+		DisplayName: Pablo Gatito
 		Tooltip: Ay mi gatito miau miau
 	}
 }
