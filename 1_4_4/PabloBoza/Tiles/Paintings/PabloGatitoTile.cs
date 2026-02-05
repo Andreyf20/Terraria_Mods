@@ -17,12 +17,12 @@ namespace PabloBoza.Tiles.Paintings
             TileID.Sets.FramesOnKillWall[Type] = true;
 
             TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3Wall); // Needs wall or anchor doesn't work lmao
-            TileObjectData.newTile.Width = 4;  // 4: 64 pixels high, 3: 48 pixels high
-            TileObjectData.newTile.Height = 6; // 6: 96 pixels wide, 3: 48 pixels wide
-            TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16, 16, 16, 16, 16 }; // 6 rows of 16 pixels high
+            TileObjectData.newTile.Width = 4;
+            TileObjectData.newTile.Height = 5;
+            TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16, 16, 16, 16 };
             TileObjectData.newTile.CoordinateWidth = 16;
             TileObjectData.newTile.CoordinatePadding = 2;
-            TileObjectData.newTile.Origin = new Point16(3, 5); // Anchor point
+            TileObjectData.newTile.Origin = new Point16(3, 4); // Anchor point
             TileObjectData.addTile(Type);
 
             AddMapEntry(new Color(120, 85, 60), CreateMapEntryName());

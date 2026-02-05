@@ -7,7 +7,7 @@ using Terraria.ObjectData;
 
 namespace PabloBoza.Tiles.Paintings
 {
-    public class PabloSleepingTile : ModTile
+    public class McVagoSleepingTile : ModTile
     {
         public override void SetStaticDefaults()
         {

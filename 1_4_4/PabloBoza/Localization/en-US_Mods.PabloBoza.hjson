@@ -1,16 +1,22 @@
 Tiles: {
-	PabloSleepingTile.MapEntry: Pablo Sleeping Tile
-	PabloGatitoTile.MapEntry: Pablo Gatito Tile
+	PabloSleepingTile.MapEntry: Pablo Sleeping
+	PabloGatitoTile.MapEntry: Pablo Gatito
+	McVagoSleepingTile.MapEntry: Mc Vago Sleeping
 }
 
 Items: {
 	PabloSleeping: {
 		DisplayName: Pablo Sleeping
-		Tooltip: Cosi roncando?
+		Tooltip: Cuidado con Cosi roncando
 	}
 
 	PabloGatito: {
 		DisplayName: Pablo Gatito
 		Tooltip: Ay mi gatito miau miau
+	}
+
+	McVagoSleeping: {
+		DisplayName: McVago Sleeping
+		Tooltip: Pocas cosas mas peligrosas que vivir en Cod
 	}
 }
