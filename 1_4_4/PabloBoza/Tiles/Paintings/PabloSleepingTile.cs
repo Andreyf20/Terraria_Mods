@@ -21,7 +21,7 @@ namespace PabloBoza.Tiles.Paintings
             TileObjectData.newTile.Height = 5;
             TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16, 16, 16, 16 };
             TileObjectData.newTile.CoordinateWidth = 16;
-            TileObjectData.newTile.CoordinatePadding = 2;
+            TileObjectData.newTile.CoordinatePadding = 0;
             TileObjectData.newTile.Origin = new Point16(3, 4); // Anchor point
             TileObjectData.addTile(Type);
 
