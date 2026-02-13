@@ -2,6 +2,7 @@ Tiles: {
 	PabloSleepingTile.MapEntry: Pablo Sleeping
 	PabloGatitoTile.MapEntry: Pablo Gatito
 	McVagoSleepingTile.MapEntry: Mc Vago Sleeping
+	PabloTrabatotskiTile.MapEntry: Pablo Trabatotski
 }
 
 Items: {
@@ -18,5 +19,10 @@ Items: {
 	McVagoSleeping: {
 		DisplayName: McVago Sleeping
 		Tooltip: Pocas cosas mas peligrosas que vivir en Cod
+	}
+
+	PabloTrabatotski: {
+		DisplayName: Pablo Trabatotski
+		Tooltip: Weed is love, Weed is life
 	}
 }
